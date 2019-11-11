@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 7.3
+    commands:
+      - composer install
+  post_build:
+    commands:
+      
+artifacts:
+  type: zip
+  files:
+    - template-export.yml
+    - template-configuration.json
